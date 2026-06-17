@@ -1,0 +1,223 @@
+- version: 4.0.3
+  is_new: true
+  download_url: https://www.yoto.work/downloads/Agent_windows_amd64_4.0.3.zip
+  hash: sha256:1234567890
+  message: 修复 Temu 上架 AI 外链图未转存店小秘图床导致 Image link cannot be empty；上架前轮播/变种图自动转存 wxalbum CDN。Release：https://github.com/hyhacct/commander-agent-t260220/releases/tag/4.0.3
+  force_update: true
+  update_time: 1781667181
+
+- version: 4.0.2
+  is_new: false
+  download_url: https://www.yoto.work/downloads/Agent_windows_amd64_4.0.2.zip
+  hash: sha256:1234567890
+  message: 修复 Temu 上架申报价缩小 100 倍（supplierPrice 按「分」提交，勿再 /100）；上架日志打印各 SKU 申报价(分/元)
+  force_update: true
+  update_time: 1781596800
+
+- version: 4.0.1
+  is_new: false
+  download_url: https://www.yoto.work/downloads/Agent_windows_amd64_4.0.1.zip
+  hash: sha256:1234567890
+  message: 生产环境默认连接 wss + www.yoto.work；店小秘上架与 WebSocket 优化（Release 页：https://github.com/hyhacct/commander-agent-t260220/releases/tag/4.0.1）
+  force_update: false
+  update_time: 1781539200
+
+- version: 3.5.5
+  is_new: false
+  download_url: https://open.seawol.cn/d/Agent/Agent_windows_amd64_3.5.5..zip?sign=7CnaQFvFqtpjX2nEgET9VcmlTfHBe8_Vxp-KTM9M10c=:0
+  hash: sha256:1234567890
+  message: 加入1688上报关键词功能，修复任务正在进行时，点击程序界面会导致弹窗被关闭的问题
+  force_update: false
+  update_time: 1775469855
+
+- version: 3.5.3
+  is_new: false
+  download_url: https://open.seawol.cn/d/Agent/Agent_windows_amd64_3.5.3.zip?sign=0LXcnSXDAfNnJjcxfqgYWfyiGfPLH6U4ou2zfYOw_9o=:0
+  hash: sha256:1234567890
+  message: 小更新，针对自动上货修复一些问题，务必更新到此版本
+  force_update: false
+  update_time: 1775469855
+
+- version: 3.5.2
+  is_new: false
+  download_url: https://open.seawol.cn/d/Agent/Agent_windows_amd64_3.5.2.zip?sign=O5B0U9uqQUh4-ccyJLdytx1B69dEaj7ZpXr0sPz1fw0=:0
+  hash: sha256:1234567890
+  message: 解决无法连接服务端的问题
+  force_update: false
+  update_time: 1775469855
+
+- version: 3.5.1
+  is_new: false
+  download_url: https://open.seawol.cn/d/Agent/Agent_windows_amd64_3.5.1.zip?sign=nWesiEQmkavsrLRV-rm8cE0f_dhkgmfoyT7gdOQ6z7o=:0
+  hash: sha256:1234567890
+  message: 解决Temu上报退货原因数据时提示为空的问题，并且优化多任务并发逻辑，防止出现一个失败导致整个任务失败的情况。
+  force_update: false
+  update_time: 1775098406
+
+- version: 3.5.0
+  is_new: false
+  download_url: https://open.seawol.cn/d/Agent/Agent_windows_amd64_3.5.0.zip?sign=0WE1Pxa2M7JrGG2qA0nt7UiRqHIsunY1BgLB0wtpkkU=:0
+  hash: sha256:1234567890
+  message: Temu上报数据集成，包括销量、退货、抽检数据等，点击上传将自动上报此三类数据，并且开启自动化模式时自动触发保存配置操作。
+  force_update: false
+  update_time: 1775032550
+
+- version: 3.4.5
+  is_new: false
+  download_url: https://open.seawol.cn/d/Agent/Agent_windows_amd64_3.4.5.zip?sign=Ht8ZHgatJqqiap95Wcu1Qysaoab0X0gf0GeL8KUanrQ=:0
+  hash: sha256:1234567890
+  message: Temu工具模块中新增自动拒绝所有调价选项
+  force_update: false
+  update_time: 1774421762
+
+- version: 3.4.1
+  is_new: false
+  download_url: https://open.seawol.cn/d/Agent/Agent_windows_amd64_3.4.1.zip?sign=5uzDau62PhhGikBK94-RMhy0A-Inkbselm6hPe2GAr0=:0
+  hash: sha256:1234567890
+  message: 实现Temu自动核价，开启Auto模式后，每10分钟自动进行一次核价，并且实现程序优雅退出，防止出现僵尸进程
+  force_update: false
+  update_time: 1774421762
+
+- version: 3.3.8
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.3.8.zip
+  hash: sha256:1234567890
+  message: 优化Ozon上货逻辑
+  force_update: false
+  update_time: 1774421762
+
+- version: 3.3.6
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.3.6.zip
+  hash: sha256:1234567890
+  message: 修复一些问题
+  force_update: false
+  update_time: 1774421762
+
+- version: 3.3.5
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.3.5.zip
+  hash: sha256:1234567890
+  message: 修复一些问题
+  force_update: false
+  update_time: 1774421762
+
+- version: 3.3.4
+  is_new: false
+  download_url: https://open.seawol.cn/d/Agent/Agent_windows_amd64_3.3.4.zip?sign=7O5ZN01aZ71ylrpgjlYAN7tnuIIvBmkpaxn81uuDTWE=:0
+  hash: sha256:1234567890
+  message: 修复一些问题
+  force_update: false
+  update_time: 1774421762
+
+- version: 3.3.3
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.3.3.zip
+  hash: sha256:1234567890
+  message: 实现Temu自动化功能（如果不懂怎么使用，直接群里问即可），新增1688工具，自动上报1688的订单数据
+  force_update: false
+  update_time: 1774421762
+
+- version: 3.3.0
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.3.0.zip
+  hash: sha256:1234567890
+  message: 加入Temu平台自动核价，自动处理合规性表单（每5分钟执行一次），1688商家后台自动采集发货信息（每天早上7点自动执行）等功能，需启用Auto模式并点击保存即可生效，请注意，如需使用以上功能，请务必保证Temu店铺和1688店铺均在此程序的浏览器内登陆，否则无法自动处理。
+  force_update: false
+  update_time: 1774345495
+
+- version: 3.2.5
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.2.5.zip
+  hash: sha256:1234567890
+  message: 日常简单更新，加入无头浏览器模式，部分情况可能导致崩溃，请谨慎更新
+  force_update: false
+  update_time: 1774234101
+
+- version: 3.2.3
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.2.3.zip
+  hash: sha256:1234567890
+  message: 兼容妙手平台上架商品到速卖通，通过网站上货时可以选择平台，选择速卖通即可
+  force_update: false
+  update_time: 1774234097
+
+- version: 3.2.1
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.2.1.zip
+  hash: sha256:1234567890
+  message: 请务必更新至此版本，本次发布为破坏性更新，旧版本Agent将不再可用，请立刻更新至此版本，本次更新改进商品上架逻辑，整个过程将更为迅速，并类目属性的填写变得可控（只需和开发说明要改的属性即可）
+  force_update: false
+  update_time: 1774070338
+
+- version: 3.1.1
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.1.1.zip
+  hash: sha256:1234567890
+  message: 商品上架取消使用Xlsx默认图，改为使用AI图。
+  force_update: false
+  update_time: 1773818198
+
+- version: 3.1.0
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.1.0.zip
+  hash: sha256:1234567890
+  message: 推送temu平台的销售数据时，新增状态字段，并且剔除30天内未出单的无效数据。
+  force_update: false
+  update_time: 1773734362
+
+- version: 3.0.6
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.0.6.zip
+  hash: sha256:1234567890
+  message: 自动上货时，变体封面图将会使用xlsx表格中提供的图片进行填充，而不再全部使用AI生成的第一张图，且轮播图的第一张图将直接使用xlsx表格中的第一个变体图片，后面5张才是AI生成的轮播图。
+  force_update: false
+  update_time: 1773731649
+
+- version: 3.0.5
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.0.5.zip
+  hash: sha256:1234567890
+  message: 优化销售数据推送逻辑，仅填写用户名即可，无需选择销售类型。
+  force_update: false
+  update_time: 1773654226
+
+- version: 3.0.4
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.0.4.zip
+  hash: sha256:1234567890
+  message: 优化自动重上商品逻辑，防止出现频率过快的报错，加入自动上报销量功能，填写自己的后台用户名即可直接自动上报，改进自动更新机制，每1分钟检测一次新版本情况
+  force_update: false
+  update_time: 1773305243
+
+- version: 3.0.2
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.0.2.zip
+  hash: sha256:1234567890
+  message: 加入一些实用的工具模块，比如Temu导出商品列表等，如有任何问题，需及时反馈并立即回滚到上一个版本
+  force_update: false
+  update_time: 1773137024
+
+- version: 3.0.1
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64_3.0.1.zip
+  hash: sha256:1234567890
+  message: 优化仪表盘页面布局，修复浏览器窗口不随着页面大小自动调整的问题，改进消息发送机制
+  force_update: false
+  update_time: 1772851487
+
+- version: 3.0.0
+  is_new: false
+  download_url: https://agent-images-store.oss-cn-hangzhou.aliyuncs.com/agent/Agent_windows_amd64.zip
+  hash: sha256:1234567890
+  message: 本次更新修复了若干问题，并且将模型更换为Gemma3:27b，同时优化了自动更新机制，现在随时可以自动更新到最新版本
+  force_update: false
+  update_time: 1772769151
+
+- version: 2.0.0
+  is_new: false
+  download_url: https://example.com/download/2.0.0.zip
+  hash: sha256:1234567890
+  message: 测试自动更新
+  force_update: false
+  update_time: 1772769151
