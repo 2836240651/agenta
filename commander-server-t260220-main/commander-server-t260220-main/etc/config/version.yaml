@@ -1,18 +1,18 @@
-- version: 4.0.3
-  is_new: true
-  download_url: https://www.yoto.work/downloads/Agent_windows_amd64_4.0.3.zip
-  hash: sha256:1234567890
-  message: 修复 Temu 上架 AI 外链图未转存店小秘图床导致 Image link cannot be empty；上架前轮播/变种图自动转存 wxalbum CDN。Release：https://github.com/hyhacct/commander-agent-t260220/releases/tag/4.0.3
-  force_update: true
-  update_time: 1781667181
-
 - version: 4.0.2
-  is_new: false
+  is_new: true
   download_url: https://www.yoto.work/downloads/Agent_windows_amd64_4.0.2.zip
   hash: sha256:1234567890
-  message: 修复 Temu 上架申报价缩小 100 倍（supplierPrice 按「分」提交，勿再 /100）；上架日志打印各 SKU 申报价(分/元)
-  force_update: true
-  update_time: 1781596800
+  message: 推荐版本：Temu 上架直接使用 AI 外链提交（不转存店小秘图床）。4.0.3 因图床配额问题已回退，请勿升级 4.0.3。Release：https://github.com/hyhacct/commander-agent-t260220/releases/tag/4.0.2
+  force_update: false
+  update_time: 1781671685
+
+- version: 4.0.3
+  is_new: false
+  download_url: https://www.yoto.work/downloads/Agent_windows_amd64_4.0.3.zip
+  hash: sha256:1234567890
+  message: 已回退：强制转存店小秘图床，图床满时无法上架。请使用 4.0.2。
+  force_update: false
+  update_time: 1781667181
 
 - version: 4.0.1
   is_new: false
