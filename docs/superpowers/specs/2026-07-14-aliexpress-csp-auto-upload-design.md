@@ -138,14 +138,16 @@ ae-csp login   --account <name>
 ae-csp check   --account <name>
 ae-csp capture --account <name> [--out captures/<session>] [--har]
 ae-csp publish --account <name> --from products/demo.json [--dry-run] [--headless]
+ae-csp api     --account <name> --method <M> --url <URL>   # 可选诊断，非签署必项
 ```
 
 | 命令 | 行为 |
 |------|------|
 | `login` | **强制有头**。打开账号对应 CSP 登录 URL → 人工完成登录 → 写 `cookies/csp_<name>.json`。不提供 `--headless`。 |
 | `check` | **优先有头**（可用配置覆盖）。用 `storage_state` 打开发品页；判定见下。失败提示先 `login`。 |
-| `capture` | **强制有头**。进入发品页；记录请求；JSONL + filtered；`--har` 可选。不提供 `--headless`。 |
-| `publish` | 读 JSON → 校验 → `APIRequestContext` 回放最小接口链。默认可无头（`--headless`）；鉴权失败时提示有头 `check`/`login`。`--dry-run` 只打印将发请求。 |
+| `capture` | **强制有头**。进入发品页；记录请求；JSONL + filtered；`--har` 可选。不提供 `--headless`。结束：Enter/约定键 flush；Ctrl+C 亦须落盘并写 meta 结束原因。 |
+| `publish` | 读 JSON → 校验 → `APIRequestContext` 回放最小接口链。默认可无头（`--headless`）；鉴权失败时提示有头 `check`/`login`。`--dry-run` 只打印将发请求。**仅退出码 0 时** RefreshCookie。 |
+| `api`（可选） | 单 URL 探活，用于区分会话问题与业务/签名问题；**不计入** MVP 签署必项。 |
 
 **`check` 通过标准（MVP 写死，对齐抖音门闸）**：
 
@@ -216,7 +218,7 @@ CheckSession → LoadProduct → UploadMedia → CreateOrEdit → FillSku → Su
 | FillSku | 写入 SKU/价库/规格；可与 Create 合并为同一步（可插拔） |
 | Submit | 提交审核或上架 |
 | Confirm | 以响应 JSON 为准；可选再 GET 详情确认 |
-| RefreshCookie | 在**同一** Playwright `BrowserContext` 内回放结束后执行 `storage_state` 写回 cookie 文件（MVP 指定路径，见 §3） |
+| RefreshCookie | 在**同一** Playwright `BrowserContext` 内，**仅整体成功（退出码 0）**时 `storage_state` 写回；失败与 `--dry-run` 不写回 |
 
 错误分级：
 
@@ -317,3 +319,14 @@ CheckSession → LoadProduct → UploadMedia → CreateOrEdit → FillSku → Su
 4. `switchId`/`channelId` 等按账号覆盖，禁止全局写死唯一 URL
 5. `check` 写死发品页门闸；里程碑 4 为 publish 验收硬依赖
 6. 标明独立 git 仓库，不并入 Commander 子工程树
+
+### 15.1 配套文档包（v2 同步）
+
+| 文档 | 路径 |
+|------|------|
+| 需求分析 | [`aliexpress-csp-mvp/requirements.md`](./aliexpress-csp-mvp/requirements.md) |
+| PRD 实施包 | [`aliexpress-csp-mvp/prd-实施包.md`](./aliexpress-csp-mvp/prd-实施包.md) |
+| 技术分析 | [`aliexpress-csp-mvp/技术分析文档.md`](./aliexpress-csp-mvp/技术分析文档.md) |
+| 测试用例 | [`aliexpress-csp-mvp/测试用例.md`](./aliexpress-csp-mvp/测试用例.md) |
+
+v2 后相对文档包又闭合：可选 `ae-csp api` 诊断、RefreshCookie 仅成功写盘、capture 结束/flush 约定、文档最终迁入目标仓 `docs/`。
